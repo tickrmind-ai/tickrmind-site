@@ -777,6 +777,34 @@ export default function TickrMindLandingPage() {
               <a href="mailto:hello@tickrmind.com">hello@tickrmind.com</a>
               <a href="mailto:beta@tickrmind.com">beta@tickrmind.com</a>
             </div>
+            <div className="footer-socials" aria-label="TickrMind social links">
+              <a href="https://x.com/tickrmind" target="_blank" rel="noreferrer" aria-label="TickrMind on X">
+                <X size={15} aria-hidden="true" />
+                @tickrmind
+              </a>
+              <a
+                href="https://www.instagram.com/tickrmind"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="TickrMind on Instagram"
+              >
+                <span className="social-mark" aria-hidden="true">
+                  IG
+                </span>
+                @tickrmind
+              </a>
+              <a
+                href="https://www.youtube.com/@tickrmind"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="TickrMind on YouTube"
+              >
+                <span className="social-mark" aria-hidden="true">
+                  YT
+                </span>
+                @tickrmind
+              </a>
+            </div>
             <div>Not financial advice. Trade responsibly.</div>
             <div>&copy; 2026 TickrMind. All rights reserved.</div>
           </div>

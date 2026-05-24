@@ -1068,6 +1068,36 @@ a {
   gap: 10px 16px;
 }
 
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--text);
+  font-weight: 700;
+  padding: 8px 12px;
+}
+
+.footer-socials a:hover {
+  border-color: rgba(0, 229, 160, 0.42);
+  color: var(--green);
+}
+
+.social-mark {
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
 .footer a:hover {
   color: var(--text);
 }
