@@ -125,6 +125,10 @@ export async function appendBetaSignup({
   }
 
   const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
+  if (!spreadsheetId) {
+    return { duplicate: false, stored: false };
+  }
+
   const sheetName = process.env.GOOGLE_SHEETS_BETA_SHEET_NAME || "Beta Signups";
   const accessToken = await getGoogleAccessToken();
   const existingEmails = await fetchExistingBetaEmails({ accessToken, sheetName, spreadsheetId });
